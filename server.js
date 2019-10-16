@@ -1,11 +1,19 @@
-//Express config
+// * Bringing in required packages
 var express = require("express");
-var app = express();
 
-//Server port config
+// * App and port config
+var app = express();
 var PORT = process.env.PORT || 8080;
 
-//Server listener
-app.listen(PORT, function(){
-    console.log("Server listening on: http://localhost:"+ PORT);
+// * Middleware config
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// * Bringing in our routers
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
+// * Final server config
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
 });

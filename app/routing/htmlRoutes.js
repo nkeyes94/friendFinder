@@ -1,8 +1,16 @@
-//Express config
-var express = require("express");
-var app = express();
+// * Requiring path
+var path = require("path");
 
-//Get route for the survey
-app.get("/survey", function(){
-    //Return Survey.HTML here!
-});
+module.exports = function(app) {
+
+  // * When the survey route is hit, render the survey page
+  app.get("/survey", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/survey.html"));
+  });
+
+  // * If the route cannot be found, the application will return to the home page
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/home.html"));
+  });
+
+};
