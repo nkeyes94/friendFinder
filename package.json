@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "8/15/2019\r -Created the configuration for server.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkeyes94/friendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkeyes94/friendFinder/issues"
+  },
+  "homepage": "https://github.com/nkeyes94/friendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
