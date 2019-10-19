@@ -9,6 +9,10 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// * Importing our routers
+require("./app/router/apiRoutes")(app);
+require("./app/router/htmlRoutes")(app);
+
 app.listen(PORT, function(){
     console.log("Application listening on localhost:"+ PORT);
 })
