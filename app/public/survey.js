@@ -8,7 +8,7 @@ $(document).ready(function(){
     $(".q1").click(function(){
         answers[0] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q1").prop("disabled", true)
     })
 
@@ -16,7 +16,7 @@ $(document).ready(function(){
     $(".q2").click(function(){
         answers[1] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q2").prop("disabled", true)
     })
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
     $(".q3").click(function(){
         answers[2] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q3").prop("disabled", true)
     })
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
     $(".q4").click(function(){
         answers[3] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q4").prop("disabled", true)
     })
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
     $(".q5").click(function(){
         answers[4] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q5").prop("disabled", true)
     })
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
     $(".q6").click(function(){
         answers[5] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q6").prop("disabled", true)
     })
 
@@ -56,7 +56,7 @@ $(document).ready(function(){
     $(".q7").click(function(){
         answers[6] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q7").prop("disabled", true)
     })
 
@@ -64,7 +64,7 @@ $(document).ready(function(){
     $(".q8").click(function(){
         answers[7] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q8").prop("disabled", true)
     })
 
@@ -72,7 +72,7 @@ $(document).ready(function(){
     $(".q9").click(function(){
         answers[8] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q9").prop("disabled", true)
     })
 
@@ -80,7 +80,7 @@ $(document).ready(function(){
     $(".q10").click(function(){
         answers[9] = this.innerHTML;
         console.log(this.innerHTML);
-        
+        this.style.backgroundColor = "red";
         $(".q10").prop("disabled", true)
     })
     
